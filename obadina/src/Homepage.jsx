@@ -1,4 +1,5 @@
 import Navigation from '../src/Navigation.jsx';
+import Footer from '../src/Footer.jsx';
 import DefaultButton from '../src/DefaultButton.jsx'
 import { Carousel } from 'flowbite-react';
 // import { Card } from 'flowbite-react';
@@ -10,32 +11,36 @@ function Homepage() {
             <Navigation />
 
             {/* first homepage section  */}
-            <div className='md:flex flex-row items-center bg-lightGreen '>
-                <div className="right p-5">
-                    <img src="/obadina1.svg" alt="" />
+            <div className='xl:flex flex-row items-center bg-lightGreen  xl:flex-row-reverse xl:px-16 xl:justify-between xl:py-10'>
+                <div className="right p-5 xl:flex xl:justify-end xl:mr-0">
+                    <img src="/obadina1.svg" className='w-full xl:w-3/4' alt="" />
                 </div>
-                <div className="left p-5 text-center ">
-                    <h3 className='font-bold text-cm'>Igniting minds to soar through <span className='text-green-500 '> academic </span> excellence</h3>
+                <div className="left p-5 text-center md:p-5 xl:flex xl:flex-col xl:justify-start xl:text-left xl:w-6/12">
+                    <h3 className='font-bold text-cm md:px-20 xl:px-0 xl:text-dm'>Igniting minds to soar through <span className='text-green-500 '> academic </span> excellence</h3>
                     <p className='text-base py-4'>Dr. Obadina  is a renowned expert in  Food Safety and Biotechnology, Professor at the Federal University  of Agriculture, Abeokuta, Nigeria. </p>
-                    <DefaultButton className={'bg-primaryGreen w-full'} buttonText={'Get Started'} />
+                    <div className='flex justify-center xl:justify-start'>
+                    <DefaultButton className={'bg-primaryGreen w-full md:w-6/12'} buttonText={'Get Started'} />
+                    </div>
                 </div>
             </div>
 
             {/* Second homepage section - Philosophy  */}
-            <div className='md:flex flex-row items-center '>
-                <div className="right p-5 flex items-center justify-center">
-                    <img src="/Image2.png" alt="" />
+            <div className='xl:flex flex-row items-center xl:my-10 xl:mx-16 xl:justify-between '>
+                <div className="right p-5 flex items-center justify-center xl:w-3/4 xl:justify-start ">
+                    <img src="/Image2.png" className='w-full xl:w-3/4 ' alt=""/>
                 </div>
-                <div className="left p-5 text-center ">
-                    <h3 className='font-bold text-xl'> Teaching philosophy </h3>
-                    <p className='font-light text-base py-4'>To use active learning to teach students critical thinking skills and the ability to critically evaluate and judge information presented to them (in print, through the Internet, and orally); To help student to develop life long-learning skills; and  to help students acquire the ability and self-confidence to develop and defend their own ideas. </p>
+                <div className="left p-5 text-center xl:text-left xl:w-3/4 ">
+                    <h3 className='font-bold text-xl xl:text-cm'> Teaching philosophy </h3>
+                    <p className='font-light text-base py-4 xl:pr-20 '>To use active learning to teach students critical thinking skills and the ability to critically evaluate and judge information presented to them (in print, through the Internet, and orally); To help student to develop life long-learning skills; and  to help students acquire the ability and self-confidence to develop and defend their own ideas. </p>
                 </div>
             </div>
 
             {/* Third homepage section - Work Experience   */}
-            <div className='flex flex-col items-center justify-center '>
-                <h3 className='font-bold text-xl text-center'> Work Experience </h3>
-                {/* Card 1  */}
+            <div className='flex flex-col items-center justify-center  xl:my-10 xl:mx-16'>
+                <h3 className='font-bold text-xl text-center xl:text-cm xl:py-10'> Work Experience </h3>
+                {/* Cards */}
+                <div className='xl:flex xl:flex-row xl:justify-between'>
+                    {/* Card 1  */}
                 <div href="#" className="bg-lightGreen mx-10 my-5 items-center justify-center text-center rounded-2xl">
                     <div className="flex items-center justify-center p-2">
                         <img src="/icon-box.svg" alt="academic gown cap" />
@@ -52,7 +57,7 @@ function Homepage() {
                     </div>
                     <div>
                         <h5 className='text-lg font-bold py-2'>Research Experience</h5>
-                        <p className='p-2'>Exciting ventures I've undertaken in the pursuit of knowledge, discovery and shedding light on the projects.</p>
+                        <p className='p-2'>Exciting ventures I&apos;ve undertaken in the pursuit of knowledge, discovery and shedding light on the projects.</p>
                     </div>
                 </div>
                 {/* Card 3  */}
@@ -62,21 +67,27 @@ function Homepage() {
                     </div>
                     <div>
                         <h5 className='text-lg font-bold py-2'>Administrative Experience</h5>
-                        <p className='p-2'> Roles and responsibilities in various  administrative capacities, showcasing how I've contributed to efficient operations.</p>
+                        <p className='p-2'> Roles and responsibilities in various  administrative capacities, showcasing how I&apos;ve contributed to efficient operations.</p>
                     </div>
                 </div>
-                <DefaultButton buttonText={'Learn More'} className={'text-green-500 w-9/12 border-green-400'} />
+                </div>
+                
+                <div className='flex flex-row text-green-500 text-bold p-2 w-60 border-green-400 border-2 border-solid rounded-lg xl:mt-10'>
+                    <p className='text-center pl-10'> Learn More </p>
+                    <img className='pl-2' src="/Arrow 1.svg" alt="" /> 
+                </div>
+
             </div>
 
             {/* Fourth section - Professor's Gallery  */}
-            <div className="flex flex-col items-center justify-center ">
+            <div className="flex flex-col items-center justify-center md:mt-8 xl:my-10 xl:mx-16">
                 <div className="flex flex-col items-center justify-center">
-                    <h3 className='font-bold text-xl my-5'>Professor's Gallery</h3>
-                    <p className='text-center px-2'>Explore the capturing moments of professor's academic activities through captivating images.</p>
+                    <h3 className='font-bold text-xl my-5 xl:text-cm'>Professor&apos;s Gallery</h3>
+                    <p className='text-center px-2'>Explore the capturing moments of professor&apos;s academic activities through captivating images.</p>
                 </div>
             </div>
             {/* Carousel section  */}
-            <div className="h-56 m-8 sm:h-64 xl:h-80 2xl:h-96">
+            <div className="h-56 m-8 sm:h-64 xl:h-80 2xl:h-96 xl:mx-16">
                 <Carousel>
                     <img src="/slides.svg" alt="..." />
                     <img src="https://flowbite.com/docs/images/carousel/carousel-2.svg" alt="..." />
@@ -86,26 +97,26 @@ function Homepage() {
                 </Carousel>
             </div>
 
-            {/* fifth homepage section  */}
-            <div className='md:flex flex-row items-center bg-lightGreen '>
+            {/* fifth homepage section  - Achievement section */}
+            <div className='xl:flex flex-row items-center bg-lightGreen xl:px-16 '>
                 <div className="right p-5">
-                    <img src="/books.svg" alt="" />
+                    <img src="/books.svg" className='w-full md:px-8' alt="" />
                 </div>
-                <div className="m-4 text-left">
-                    <h5 className='font-bold text-lg py-2'>Groundbreaking Research and <span className='text-green-500 '> Achievements  </span> in Food safety and Biotechnology</h5>
+                <div className="m-4 text-left md:px-10">
+                    <h5 className='font-bold text-lg py-2' >Groundbreaking Research and <span className='text-green-500 '> Achievements  </span> in Food safety and Biotechnology</h5>
                 </div>
                 {/* Groundbreaking stats */}
-                <div className='flex flex-row justify-between mx-8'>
+                <div className='flex flex-row justify-between mx-8 md:pl-10 md:pr-40'>
                     <div>
                         <h4 className='text-green-500 font-bold'>80+</h4>
                         <p className='py-2'>Publications</p>
                     </div>
-                    <div>
+                    <div >
                         <h4 className='text-green-500 font-bold'>30+</h4>
                         <p className='py-2'>Conferences attended</p>
                     </div>
                 </div>
-                <div className='flex flex-row justify-between mx-8'>
+                <div className='flex flex-row justify-between mx-8 md:pl-10 md:pr-40'>
                     <div>
                         <h5 className='text-green-500 font-bold'>25+</h5>
                         <p className='py-2'>Accolades</p>
@@ -118,10 +129,10 @@ function Homepage() {
             </div>
 
             {/* Sixt section - Collaboration  */}
-            <div className='my-4 mx-8'>
+            <div className='my-4 mx-8 '>
                 <div>
                     <div className='my-4'>
-                        <h4 className='py-4 text-xl text-bold'>Collaborate with us <span className="text-green-500" >today!</span></h4>
+                        <h4 className='py-4 font-bold text-xl text-center md:text-left'>Collaborate with us <span className="text-green-500" >today!</span></h4>
                         <p className='text-base '>Contact us for academic inquiries or collaboration opportunities.</p>
                     </div>
                     <div>
@@ -178,6 +189,8 @@ function Homepage() {
                     </div>
                 </form>
             </div>
+
+            <Footer />
         </div>
     )
 }
