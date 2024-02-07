@@ -2,6 +2,7 @@ import Navigation from '../src/Navigation.jsx';
 import Footer from '../src/Footer.jsx';
 import DefaultButton from '../src/DefaultButton.jsx'
 import { Carousel } from 'flowbite-react';
+
 // import { Card } from 'flowbite-react';
 
 function Homepage() {
@@ -19,15 +20,15 @@ function Homepage() {
                     <h3 className='font-bold text-cm md:px-20 xl:px-0 xl:text-dm'>Igniting minds to soar through <span className='text-green-500 '> academic </span> excellence</h3>
                     <p className='text-base py-4'>Dr. Obadina  is a renowned expert in  Food Safety and Biotechnology, Professor at the Federal University  of Agriculture, Abeokuta, Nigeria. </p>
                     <div className='flex justify-center xl:justify-start'>
-                    <DefaultButton className={'bg-primaryGreen w-full md:w-6/12'} buttonText={'Get Started'} />
+                        <DefaultButton className={'bg-primaryGreen w-full md:w-6/12'} buttonText={'Get Started'} />
                     </div>
                 </div>
             </div>
 
             {/* Second homepage section - Philosophy  */}
             <div className='xl:flex flex-row items-center xl:my-10 xl:mx-16 xl:justify-between '>
-                <div className="right p-5 flex items-center justify-center xl:w-3/4 xl:justify-start ">
-                    <img src="/Image2.png" className='w-full xl:w-3/4 ' alt=""/>
+                <div className="right p-5 flex items-center justify-center xl:w-2/4 xl:justify-start ">
+                    <img src="/Image2.png" className='w-full xl:w-3/4 ' alt="" />
                 </div>
                 <div className="left p-5 text-center xl:text-left xl:w-3/4 ">
                     <h3 className='font-bold text-xl xl:text-cm'> Teaching philosophy </h3>
@@ -41,40 +42,40 @@ function Homepage() {
                 {/* Cards */}
                 <div className='xl:flex xl:flex-row xl:justify-between'>
                     {/* Card 1  */}
-                <div href="#" className="bg-lightGreen mx-10 my-5 items-center justify-center text-center rounded-2xl">
-                    <div className="flex items-center justify-center p-2">
-                        <img src="/icon-box.svg" alt="academic gown cap" />
+                    <div href="#" className="bg-lightGreen mx-10 my-5 items-center justify-center text-center rounded-2xl">
+                        <div className="flex items-center justify-center p-2">
+                            <img src="/icon-box.svg" alt="academic gown cap" />
+                        </div>
+                        <div>
+                            <h5 className='text-lg font-bold py-2'>Academic Experience</h5>
+                            <p className='p-2'>Foundations of knowledge built throughout  academic my years, Innovative teaching, and knowledge amassed over the years.</p>
+                        </div>
                     </div>
-                    <div>
-                        <h5 className='text-lg font-bold py-2'>Academic Experience</h5>
-                        <p className='p-2'>Foundations of knowledge built throughout  academic my years, Innovative teaching, and knowledge amassed over the years.</p>
+                    {/* Card 2  */}
+                    <div href="#" className="bg-lightGreen mx-10 my-5 items-center justify-center text-center rounded-2xl">
+                        <div className="flex items-center justify-center p-2">
+                            <img src="/icon-box-3.png" alt="academic gown cap" />
+                        </div>
+                        <div>
+                            <h5 className='text-lg font-bold py-2'>Research Experience</h5>
+                            <p className='p-2'>Exciting ventures I&apos;ve undertaken in the pursuit of knowledge, discovery and shedding light on the projects.</p>
+                        </div>
+                    </div>
+                    {/* Card 3  */}
+                    <div href="#" className="bg-lightGreen mx-10 my-5 items-center justify-center text-center rounded-2xl">
+                        <div className="flex items-center justify-center p-2">
+                            <img src="/icon-box-2.png" alt="academic gown cap" />
+                        </div>
+                        <div>
+                            <h5 className='text-lg font-bold py-2'>Administrative Experience</h5>
+                            <p className='p-2'> Roles and responsibilities in various  administrative capacities, showcasing how I&apos;ve contributed to efficient operations.</p>
+                        </div>
                     </div>
                 </div>
-                {/* Card 2  */}
-                <div href="#" className="bg-lightGreen mx-10 my-5 items-center justify-center text-center rounded-2xl">
-                    <div className="flex items-center justify-center p-2">
-                        <img src="/icon-box-3.png" alt="academic gown cap" />
-                    </div>
-                    <div>
-                        <h5 className='text-lg font-bold py-2'>Research Experience</h5>
-                        <p className='p-2'>Exciting ventures I&apos;ve undertaken in the pursuit of knowledge, discovery and shedding light on the projects.</p>
-                    </div>
-                </div>
-                {/* Card 3  */}
-                <div href="#" className="bg-lightGreen mx-10 my-5 items-center justify-center text-center rounded-2xl">
-                    <div className="flex items-center justify-center p-2">
-                        <img src="/icon-box-2.png" alt="academic gown cap" />
-                    </div>
-                    <div>
-                        <h5 className='text-lg font-bold py-2'>Administrative Experience</h5>
-                        <p className='p-2'> Roles and responsibilities in various  administrative capacities, showcasing how I&apos;ve contributed to efficient operations.</p>
-                    </div>
-                </div>
-                </div>
-                
+
                 <div className='flex flex-row text-green-500 text-bold p-2 w-60 border-green-400 border-2 border-solid rounded-lg xl:mt-10'>
                     <p className='text-center pl-10'> Learn More </p>
-                    <img className='pl-2' src="/Arrow 1.svg" alt="" /> 
+                    <img className='pl-2' src="/Arrow 1.svg" alt="" />
                 </div>
 
             </div>
@@ -98,41 +99,44 @@ function Homepage() {
             </div>
 
             {/* fifth homepage section  - Achievement section */}
-            <div className='xl:flex flex-row items-center bg-lightGreen xl:px-16 '>
-                <div className="right p-5">
-                    <img src="/books.svg" className='w-full md:px-8' alt="" />
+            <div className='xl:flex flex-row items-center bg-lightGreen xl:px-16 xl:justify-between '>
+                <div className="right p-5 xl:py-4 xl:w-2/5" >
+                    <img src="/books.svg" className='w-full  md:px-8 xl:p-0  xl:w-160  xl:rounded-lg' alt="Books"/>
                 </div>
-                <div className="m-4 text-left md:px-10">
-                    <h5 className='font-bold text-lg py-2' >Groundbreaking Research and <span className='text-green-500 '> Achievements  </span> in Food safety and Biotechnology</h5>
+                <div className='xl:w-3/5 xl:py-20'>
+                    <div className="m-4 text-left md:px-10 ">
+                        <h5 className='font-bold text-lg py-2 xl:text-cm ' >Groundbreaking Research and <span className='text-green-500 '> Achievements  </span> in Food safety and Biotechnology</h5>
+                    </div>
+                    {/* Groundbreaking stats */}
+                    <div className='flex flex-row justify-start md:justify-between mx-8 md:pl-10 md:pr-40 xl:pr-0 xl:text-cm xl:py-8'>
+                        <div>
+                            <h4 className='text-green-500 font-bold '>80+</h4>
+                            <p className='py-2'>Publications</p>
+                        </div>
+                        <div className='pl-10'>
+                            <h4 className='text-green-500 font-bold'>30+</h4>
+                            <p className='py-2'>Conferences attended</p>
+                        </div>
+                    </div>
+                    <div className='flex flex-row  justify-start md:justify-between mx-8 md:pl-10 md:pr-40 xl:pr-0  xl:text-cm xl:py-8'>
+                        <div>
+                            <h5 className='text-green-500 font-bold'>25+</h5>
+                            <p className='py-2'>Accolades</p>
+                        </div>
+                        <div className='pl-12'>
+                            <h5 className='text-green-500 font-bold'>18+</h5>
+                            <p className='py-2'>Years of experience</p>
+                        </div>
+                    </div>
                 </div>
-                {/* Groundbreaking stats */}
-                <div className='flex flex-row justify-between mx-8 md:pl-10 md:pr-40'>
-                    <div>
-                        <h4 className='text-green-500 font-bold'>80+</h4>
-                        <p className='py-2'>Publications</p>
-                    </div>
-                    <div >
-                        <h4 className='text-green-500 font-bold'>30+</h4>
-                        <p className='py-2'>Conferences attended</p>
-                    </div>
-                </div>
-                <div className='flex flex-row justify-between mx-8 md:pl-10 md:pr-40'>
-                    <div>
-                        <h5 className='text-green-500 font-bold'>25+</h5>
-                        <p className='py-2'>Accolades</p>
-                    </div>
-                    <div>
-                        <h5 className='text-green-500 font-bold'>18+</h5>
-                        <p className='py-2'>Years of experience</p>
-                    </div>
-                </div>
+
             </div>
 
             {/* Sixt section - Collaboration  */}
-            <div className='my-4 mx-8 '>
-                <div>
+            <div className='my-4 mx-8 xl:flex xl:flex-row xl:px-24 xl:justify-between'>
+                <div className='xl:w-2/4'>
                     <div className='my-4'>
-                        <h4 className='py-4 font-bold text-xl text-center md:text-left'>Collaborate with us <span className="text-green-500" >today!</span></h4>
+                        <h4 className='py-4 font-bold text-xl text-center md:text-left xl:text-cm'>Collaborate with us <span className="text-green-500" >today!</span></h4>
                         <p className='text-base '>Contact us for academic inquiries or collaboration opportunities.</p>
                     </div>
                     <div>
@@ -150,7 +154,7 @@ function Homepage() {
                         </div>
                     </div>
                 </div>
-                <form onSubmit='#' className='my-4'>
+                <form onSubmit='#' className='my-4 xl:w-2/5 xl:flex xl:flex-col '>
                     <div className='flex flex-col'>
                         <label htmlFor="name">Name:</label>
                         <input

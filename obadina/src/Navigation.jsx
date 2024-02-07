@@ -1,5 +1,6 @@
 import { Navbar, NavbarBrand, NavbarLink, NavbarToggle, NavbarCollapse } from 'flowbite-react';
 import DefaultButton from './DefaultButton.jsx';
+// import Link from 'next/link';
 
 
 function Navigation() {
@@ -10,8 +11,8 @@ function Navigation() {
             </NavbarBrand>
             <NavbarToggle />
             <NavbarCollapse className='m-4 font-bold'>
-                <NavbarLink href="#" active className='mt-3 text-primaryTextDark'> Home </NavbarLink>
-                <NavbarLink href="#" className='mt-3 pr-9 text-primaryTextDark' > About </NavbarLink>
+                <a href="/about" className='mt-3 text-primaryTextDark'> Home </a>
+                <NavbarLink href="/about" className='mt-3 pr-9 text-primaryTextDark' > About </NavbarLink>
                 <NavbarLink href="#" className='mt-3 pr-4 text-primaryTextDark'> Research </NavbarLink>
                 <NavbarLink href="#" className='mt-3 pr-3 text-primaryTextDark'> Publication </NavbarLink>
                 <DefaultButton className={'bg-white w-full text-green-500 border-green-400 border-2 border-solid rounded-lg'} buttonText={'Contact'} />
