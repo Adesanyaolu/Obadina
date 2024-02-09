@@ -1,6 +1,6 @@
-import Navigation from '../src/Navigation.jsx';
-import Footer from '../src/Footer.jsx';
-import DefaultButton from '../src/DefaultButton.jsx'
+import Navigation from '../components/Navigation.jsx';
+import Footer from '../components/Footer.jsx';
+import DefaultButton from '../components/DefaultButton.jsx'
 import { Carousel } from 'flowbite-react';
 
 // import { Card } from 'flowbite-react';
