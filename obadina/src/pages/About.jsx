@@ -7,7 +7,7 @@ function About() {
     <div className="font-custom">
       <Navigation />
       {/* Hero Section  */}
-      <section className="bg-center bg-no-repeat bg-[url('/oba-2.jpg')] bg-gray-700 bg-blend-multiply">
+      <section className="bg-center bg-no-repeat bg-[url('/obadina3.jpg')] bg-gray-700 bg-blend-multiply" style={{ backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="px-8 mx-auto max-w-screen-xl text-left py-24 lg:py-56">
           <h3 className="mb-4 text-cm font-extrabold tracking-tight  text-white md:text-5xl lg:text-6xl"> <span className="text-primaryGreen">Hello</span> , I’m Dr Adewale Obadina </h3>
           <p className="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Dr  Obadina isn’t just a Professor of Food Safety and Biotechnology at the Federal University of Agriculture, Abeokuta, Nigeria, He is also a visiting Professor at the Department of Biotechnology and Food Technology, University of Johannesburg, South Africa (2022 – 2027) and
