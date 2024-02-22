@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom";
 
 
 
@@ -11,10 +11,10 @@ function Footer() {
             </div>
 
             <div className='font-bold text-primaryGreen flex flex-col md:flex-row my-6 md:my-0 md:mr-8'>
-                <a href="#" className='pt-6 md:pt-0 md:pr-4'> Home </a>
-                <a href="#" className='pt-6 md:pt-0 md:pr-4 ' > About </a>
-                <a href="#" className='pt-6 md:pt-0 md:pr-4 '> Research </a>
-                <a href="#" className='pt-6 md:pt-0 '> Publication </a>
+                <Link to="/" exact="true" className='pt-6 md:pt-0 md:pr-4'> Home  </Link>
+                <Link to="/about" className='pt-6 md:pt-0 md:pr-4 ' > About </Link>
+                <Link to="/research" className='pt-6 md:pt-0 md:pr-4 '> Research </Link>
+                <Link to="/publications" className='pt-6 md:pt-0 '> Publication </Link>
             </div>
 
             <div className="flex flex-row md:pl-0">

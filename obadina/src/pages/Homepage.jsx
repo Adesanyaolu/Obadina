@@ -2,6 +2,7 @@ import Navigation from '../components/Navigation.jsx';
 import Footer from '../components/Footer.jsx';
 import DefaultButton from '../components/DefaultButton.jsx'
 import { Carousel } from 'flowbite-react';
+import { Link } from 'react-router-dom';
 
 // import { Card } from 'flowbite-react';
 
@@ -73,10 +74,13 @@ function Homepage() {
                     </div>
                 </div>
 
-                <div className='flex flex-row text-green-500 text-bold p-2 w-60 border-green-400 border-2 border-solid rounded-lg xl:mt-10'>
-                    <p className='text-center pl-10'> Learn More </p>
-                    <img className='pl-2' src="/Arrow 1.svg" alt="" />
-                </div>
+                <Link to="/workExperience">
+                    <div className='flex flex-row text-green-500 text-bold p-2 w-60 border-green-400 border-2 border-solid rounded-lg xl:mt-10'>
+                        <p className='text-center pl-10'> Learn More </p>
+                        <img className='pl-2' src="/Arrow 1.svg" alt="" />
+                    </div>
+                </Link>
+
 
             </div>
 
@@ -90,18 +94,18 @@ function Homepage() {
             {/* Carousel section  */}
             <div className="h-56 m-8 sm:h-64 xl:h-80 2xl:h-96 xl:mx-16">
                 <Carousel>
-                    <img src="/slides.svg" alt="..." />
-                    <img src="https://flowbite.com/docs/images/carousel/carousel-2.svg" alt="..." />
-                    <img src="/slides.svg" alt="..." />
-                    <img src="https://flowbite.com/docs/images/carousel/carousel-4.svg" alt="..." />
-                    <img src="/slides.svg" alt="..." />
+                    <img src="/slide1.svg" alt="Lecturing Prof" />
+                    <img src="/slide2.svg" alt="..." />
+                    <img src="/slide3.svg" alt="..." />
+                    <img src="/slide4.svg" alt="..." />
+                    <img src="/slide5.png" alt="..." />
                 </Carousel>
             </div>
 
             {/* fifth homepage section  - Achievement section */}
             <div className='xl:flex flex-row items-center bg-lightGreen xl:px-16 xl:justify-between '>
                 <div className="right p-5 xl:py-4 xl:w-2/5" >
-                    <img src="/books.svg" className='w-full  md:px-8 xl:p-0  xl:w-160  xl:rounded-lg' alt="Books"/>
+                    <img src="/books.svg" className='w-full  md:px-8 xl:p-0  xl:w-160  xl:rounded-lg' alt="Books" />
                 </div>
                 <div className='xl:w-3/5 xl:py-20'>
                     <div className="m-4 text-left md:px-10 ">
@@ -154,7 +158,10 @@ function Homepage() {
                         </div>
                     </div>
                 </div>
-                <form onSubmit='#' className='my-4 xl:w-2/5 xl:flex xl:flex-col '>
+                <form className='my-4 xl:w-2/5 xl:flex xl:flex-col '
+                    action="mailto:sanya4reel@gmail.com"
+                    method="post"
+                    encType="text/plain" >
                     <div className='flex flex-col'>
                         <label htmlFor="name">Name:</label>
                         <input
@@ -162,7 +169,6 @@ function Homepage() {
                             type="text"
                             id="name"
                             name="name"
-                            value=""
                             required
                         />
                     </div>
@@ -173,7 +179,6 @@ function Homepage() {
                             type="email"
                             id="email"
                             name="email"
-                            value=""
                             required
                         />
                     </div>
@@ -184,7 +189,6 @@ function Homepage() {
                             placeholder='Type your message...'
                             id="message"
                             name="message"
-                            value=""
                             required
                         />
                     </div>
