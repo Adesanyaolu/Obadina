@@ -34,7 +34,7 @@ function Contact() {
                             </div>
                         </div>
                     </div>
-                    <form onSubmit='#' className='my-4 xl:w-2/5 xl:flex xl:flex-col'
+                    <form className='my-4 xl:w-2/5 xl:flex xl:flex-col'
                         action="mailto:sanya4reel@gmail.com"
                         method="post"
                         encType="text/plain" >
