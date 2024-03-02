@@ -1,9 +1,12 @@
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Routes,
   Route
+  // Switch
 } from "react-router-dom";
 import "tailwindcss/tailwind.css";
+
+
 
 import Homepage from '../src/pages/Homepage.jsx';
 import About from '../src/pages/About.jsx';
@@ -29,6 +32,18 @@ function App() {
             <Route  path="/workExperience" element={<WorkExperience />}></Route>
           </Routes>
         </Router>
+        // <Router>
+        //   <Switch>
+        //     <Routes>
+        //       <Route exact="true" path="/" element={<Homepage />}></Route>
+        //       <Route path="/about" element={<About />}></Route>
+        //       <Route path="/publications" element={<Publications />}></Route>
+        //       <Route path="/research" element={<Research />}></Route>
+        //       <Route path="/contact" element={<Contact />}></Route>
+        //       <Route path="/workExperience" element={<WorkExperience />}></Route>
+        //     </Routes>
+        //   </Switch>
+        // </Router>
       }
     </>
   );
