@@ -3,6 +3,7 @@ import {
   Routes,
   Route
 } from "react-router-dom";
+import "tailwindcss/tailwind.css";
 
 import Homepage from '../src/pages/Homepage.jsx';
 import About from '../src/pages/About.jsx';

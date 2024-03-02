@@ -7,7 +7,7 @@ function defaultButton({ buttonText, className }) {
     <>
 
       <Link to="/contact" >
-        <Button className={`${className} text-lg font-bold`}>  {buttonText} </Button>
+        <Button className={`${className} text-lg font-bold `}>  {buttonText} </Button>
       </Link>
 
     </>
